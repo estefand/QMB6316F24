@@ -41,7 +41,6 @@ rm(list=ls(all=TRUE))
 
 # Set path for working directory.
 setwd("~/GitHub/QMB6316F24/demo_07_linear_regression")
-
 # Modify the above line according to the specific path on your computer,
 # as in:
 # wd_path <- 'C:/Users/name/of/your/path'
