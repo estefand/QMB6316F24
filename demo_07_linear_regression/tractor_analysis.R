@@ -39,8 +39,7 @@ rm(list=ls(all=TRUE))
 # 5. Paste the command below:
 
 
-setwd("~/GitHub/QMB6316F24/demo_07_linear_regression")
-
+setwd("~/GitHub - Fall Semester 2024/QMB6316F24/demo_07_linear_regression")
 
 # Now, RStudio should know where your files are.
 
@@ -222,6 +221,45 @@ lm_model_6 <- lm(data = tractor_full,
 
 # Output the results to screen.
 summary(lm_model_6)
+
+
+##################################################
+# Test with seasonal indicators
+##################################################
+
+
+
+# Estimate a regression model.
+lm_model_7 <- lm(data = tractor_full,
+                 formula = log_saleprice ~ horsepower + squared_horsepower +
+                   age + enghours +
+                   cab +
+                   # diesel + 
+                   fwd + johndeere + 
+                   spring + summer + winter)
+
+# Output the results to screen.
+summary(lm_model_7)
+
+
+##################################################
+# Test with seasonal indicators
+##################################################
+
+
+
+# Estimate a regression model.
+lm_model_8 <- lm(data = tractor_full,
+                 formula = log_saleprice ~ horsepower + squared_horsepower +
+                   age + enghours +
+                   cab +
+                   # diesel + 
+                   fwd + johndeere + 
+                   spring + summer + winter +
+                   age:johndeere)
+
+# Output the results to screen.
+summary(lm_model_8)
 
 
 ##################################################
