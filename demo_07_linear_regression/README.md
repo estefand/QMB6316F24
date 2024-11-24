@@ -77,7 +77,30 @@ This is done by using the generic ```summary``` function just as you would for a
 
 
 ```
-summary(my_lm_model)
+Call:
+lm(formula = log(saleprice) ~ age + enghours + johndeere + spring + 
+    summer + winter, data = tractor_sales)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.19146 -0.54194 -0.02331  0.49336  2.15617 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1.004e+01  1.105e-01  90.846  < 2e-16 ***
+age         -5.491e-02  5.818e-03  -9.438  < 2e-16 ***
+enghours     7.443e-05  1.652e-05   4.505  9.9e-06 ***
+johndeere    5.445e-02  1.345e-01   0.405    0.686    
+spring       1.938e-01  1.243e-01   1.559    0.120    
+summer      -6.316e-02  1.228e-01  -0.514    0.607    
+winter       1.088e-01  1.365e-01   0.797    0.426    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7705 on 269 degrees of freedom
+Multiple R-squared:  0.2648,	Adjusted R-squared:  0.2484 
+F-statistic: 16.15 on 6 and 269 DF,  p-value: 7.206e-16
+
 ```
 
 

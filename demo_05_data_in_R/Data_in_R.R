@@ -35,7 +35,8 @@ rm(list=ls(all=TRUE))
 # The '<-' operator denotes right-to-left assignment.
 # wd_path <- '/path/to/your/folder'
 
-wd_path <- '~/GitHub/QMB6316F24/demo_05_data_in_R'
+setwd("~/GitHub - Fall Semester 2024/QMB6316F24/demo_05_data_in_R")
+
 # setwd(wd_path)
 # getwd()
 
@@ -71,6 +72,7 @@ class(cars_df)
 
 # Should be the same.
 summary(cars_df)
+
 
 
 
