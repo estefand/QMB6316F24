@@ -38,8 +38,7 @@ rm(list=ls(all=TRUE))
 # 4. Copy the command from the Console in the bottom left pane.
 # 5. Paste the command below:
 
-
-setwd("~/GitHub/QMB6316F24/demo_07_linear_regression")
+setwd("~/GitHub/LEE VERSION/QMB6316F24/assignment_03")
 
 
 # Now, RStudio should know where your files are.

@@ -42,7 +42,7 @@ rm(list=ls(all=TRUE))
 # 4. Copy the command from the Console in the bottom left pane.
 # 5. Paste the command below:
 
-setwd("~/GitHub/QMB6316F24/demo_09_sampling_variation")
+setwd("~/GitHub - Fall Semester 2024/Esto-s-Assignment-Solutions/assignment_03")
 
 
 # Now, RStudio should know where your files are.
@@ -143,8 +143,8 @@ housing_data[, 'income_2'] <- housing_data[, 'income'] +
 ##################################################
 
 # Set the list of variables for the estimation.
-list_of_variables <- c('income', 'in_cali', 'earthquake')
-# list_of_variables <- c('income_1', 'in_cali', 'earthquake')
+# list_of_variables <- c('income', 'in_cali', 'earthquake')
+list_of_variables <- c('income_1', 'in_cali', 'earthquake')
 
 # Add beta_0 to the beginning for the full list.
 full_list_of_variables <- c('intercept', list_of_variables)
